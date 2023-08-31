@@ -156,7 +156,7 @@ export const Spanish = {
     noCategory: "Categoría no encontrada",
     postError: "Error al crear la publicación",
     noPost: "No se devolvió ninguna publicación",
-    clientExists: "La cliente ya existe",
+    clientExists: "El cliente ya existe",
     clientCreateProfileError: "Error al crear el perfil del cliente",
   },
 
