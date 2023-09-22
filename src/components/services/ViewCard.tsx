@@ -67,7 +67,7 @@ export const ViewCard: Component<Props> = (props) => {
         {newPosts().map((post: any) => (
           <li class=" w-[99%]">
             <a href={`/${lang}/posts/${post.id}`}>
-              <div class="mb-2 flex flex-col md:flex-row md:justify-start justify-center items-center rounded-lg md:h-48 shadow-md shadow-shadow-LM dark:shadow-shadow-DM box-content border border-border1 border-opacity-25">
+              <div class="mb-2 flex flex-col md:flex-row md:justify-start justify-center items-center rounded-lg md:h-48 shadow-md shadow-shadow-LM dark:shadow-shadow-DM box-content border border-opacity-25 border-border1 dark:border-border1-DM dark:border-opacity-25">
                 <div class="flex md:w-48 w-full h-80 md:h-48 md:mr-2 items-center justify-center bg-background1 dark:bg-background1-DM rounded-lg">
                   {post.image_url ? (
                     <img
@@ -78,7 +78,6 @@ export const ViewCard: Component<Props> = (props) => {
                           : "No image"
                       }
                       class="bg-background1 dark:bg-icon1-DM rounded-lg w-full h-full object-cover"
-                      // style={{height: `120px`, width: `120px`}}
                     />
                   ) : (
                     <svg
@@ -108,11 +107,11 @@ export const ViewCard: Component<Props> = (props) => {
                 >
                   <div class="grid grid-cols-4">
                     <div class="relative col-span-4 w-full flex align-top md:mt-2">
-                      <div class="truncate inline-block max-w-[58%] text-ptext2 dark:text-ptext2-DM text-sm md:text-base bg-background2 dark:bg-background2-DM  opacity-50 dark:opacity-100 w-fit rounded-lg px-2">
+                      <div class="truncate inline-block max-w-[58%] text-ptext2 dark:text-ptext2-DM text-sm md:text-base bg-background2 dark:bg-background2-DM  opacity-[85%] dark:opacity-100 w-fit rounded-lg px-2">
                         {post.major_municipality}/{post.minor_municipality}/
                         {post.governing_district}
                       </div>
-                      <div class="truncate inline-block max-w-[28%] text-ptext2 dark:text-ptext2-DM text-sm md:text-base bg-background2 dark:bg-background2-DM  opacity-50 dark:opacity-100 w-fit rounded-lg px-2 ml-1">
+                      <div class="truncate inline-block max-w-[28%] text-ptext2 dark:text-ptext2-DM text-sm md:text-base bg-background2 dark:bg-background2-DM  opacity-[85%] dark:opacity-100 w-fit rounded-lg px-2 ml-1">
                         {post.category}
                       </div>
                       <div class="absolute right-2 inline-block">
@@ -142,7 +141,7 @@ export const ViewCard: Component<Props> = (props) => {
                   </p>
 
                   <p
-                    class=" text-ptext1 dark:text-ptext1-DM text-sm max-h-[60px] line-clamp-3 mb-2 overflow-hidden mr-4"
+                    class=" text-ptext1 dark:text-ptext1-DM text-sm max-h-[60px] line-clamp-3 mb-2 overflow-hidden mr-4 prose dark:prose-invert"
                     innerHTML={post.content}
                   ></p>
                 </div>
