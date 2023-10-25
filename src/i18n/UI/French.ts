@@ -1,5 +1,6 @@
 export const French = {
   textDirection: 'ltr',
+  siteDescription: "Tout ce dont vous avez besoin pour faire le travail.",
 
   pageTitles: {
     services: 'prestations de service',
@@ -20,9 +21,12 @@ export const French = {
     resetPassword: "réinitialiser le mot de passe",
     terms: 'Termes et Conditions',
     privacy: "Politique de Confidentialité",
+    acceptableUse: "Politique d'utilisation acceptable",
     about: 'À Propos De Nous',
     impact: 'Impact',
+
     fullPost: "Voir le message complet",
+    offline: 'Hors ligne',
   },
 
   pageDescriptions: {
@@ -42,6 +46,7 @@ export const French = {
     resetPassword: "Réinitialisez votre mot de passe en toute sécurité avec Todo Servis. Suivez le lien de votre e-mail pour choisir un nouveau mot de passe.",
     terms: "Consultez nos termes et conditions. Remarque : les traductions sont fournies à titre gracieux, les termes officiels contraignants sont en espagnol.",
     privacy: "Consultez notre politique de confidentialité. Veuillez noter que les traductions sont fournies à titre gracieux, la politique officielle contraignante est en espagnol.",
+    acceptableUse: "Consultez notre politique d’utilisation acceptable. Veuillez noter que les traductions sont fournies à titre gracieux et que la politique officielle contraignante est en espagnol.",
     about: "Découvrez l'histoire de Todo Servis – qui nous sommes, notre mission et notre passion de contribuer à révolutionner la façon dont les particuliers et les entreprises trouvent et fournissent des services. Découvrez notre équipe et les valeurs qui nous animent. Rejoignez-nous dans notre voyage !",
     impact: "Découvrez l’impact significatif de Todo Servis. Découvrez comment nous faisons la différence et apprenez-en davantage sur nos projets et nos contributions à un changement positif.",
     fullPost: "En savoir plus sur ce service et contacter le fournisseur si vous êtes intéressé. Découvrez des images supplémentaires et la description complète du service.",
@@ -128,6 +133,8 @@ export const French = {
     posts: 'Messages du fournisseur',
     profileInfo: 'Informations sur le profil',
     yourPosts: 'Vos Publications',
+    optional: '(facultative)',
+    required: 'Champs Obligatoires',
   },
 
   postLabels: {
@@ -161,6 +168,8 @@ export const French = {
     changeEmail: "Si vous mettez à jour votre adresse e-mail, vous devez confirmer le changement à l'ancienne adresse e-mail et à la nouvelle adresse e-mail pour finaliser la modification.",
     locationUpdate: "Si vous mettez à jour votre emplacement, tous les champs doivent être remplis.",
     postImages: "La première image téléchargée sera affichée dans les aperçus des publications. Pour télécharger des images supplémentaires, cliquez simplement à nouveau sur Télécharger l'image.",
+    firstNameEdit: "Cela devrait être votre nom légal tel qu'il apparaît sur votre pièce d'identité gouvernementale. Si vous ne fournissez pas de nom d’affichage, votre nom et prénom seront affichés à la place. Ces valeurs peuvent être mises à jour après la création d'un compte client ou fournisseur. Puisqu'il s'agit de votre nom légal, les mêmes nom et prénom doivent être utilisés sur vos comptes client et fournisseur.",
+    lastNameEdit: "Cela devrait être votre nom légal tel qu'il apparaît sur votre pièce d'identité gouvernementale. Si vous ne fournissez pas de nom d’affichage, votre nom et prénom seront affichés à la place. Ces valeurs peuvent être mises à jour après la création d'un compte client ou fournisseur. Puisqu'il s'agit de votre nom légal, les mêmes nom et prénom doivent être utilisés sur vos comptes client et fournisseur.",
   },
 
   apiErrors: {
@@ -187,6 +196,7 @@ export const French = {
     clientCreateProfileError: "Erreur lors de la création du profil client",
     clientEditProfileError: "Erreur lors de la mise à jour du profil client",
     noClient: "Aucun client trouvé.",
+    createUserError: "Erreur lors de la création de l'utilisateur, veuillez réessayer ou contactez-nous pour obtenir de l'aide.",
   },
 
   ariaLabels: {
@@ -295,5 +305,15 @@ productCategoryInfo:{
       // Add more products as needed
     ]
   },
+
+  clearFilters: {
+    filterButtons: [
+        { text: "Effacer Tous Les Filtres", ariaLabel: "Effacer Tous Les Filtres" },
+        { text: "Effacer le Filtre de Catégorie", ariaLabel: "Effacer le Filtre de Catégorie" },
+        { text: "Effacer le Filtre des Grandes Municipalités", ariaLabel: "Effacer le Filtre des Grandes Municipalités" },
+        { text: "Effacer le Filtre des Municipalités Mineures", ariaLabel: "Effacer le Filtre des Municipalités Mineures" },
+        { text: "Effacer le Filtre de District de Gouvernement", ariaLabel: "Effacer le Filtre de District de Gouvernement" },
+    ]
+  }
 
 } as const;

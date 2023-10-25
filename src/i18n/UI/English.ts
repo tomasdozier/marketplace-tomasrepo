@@ -1,5 +1,6 @@
 export const English = {
   textDirection: 'ltr',
+  siteDescription: 'Everything you need to get the job done.',
 
   pageTitles: {
     services: 'Services',
@@ -20,9 +21,12 @@ export const English = {
     resetPassword: 'Set New Password',
     terms: 'Terms and Conditions',
     privacy: "Privacy Policy",
+    acceptableUse: "Acceptable Use Policy",
     about: 'About Us',
     impact: 'Impact',
+
     fullPost: "View Full Post",
+    offline: 'Offline',
   },
 
   pageDescriptions: {
@@ -42,6 +46,7 @@ export const English = {
     resetPassword: "Reset your password securely with Todo Servis. Follow the link from your email to choose a new password.",
     terms: "Review our Terms and Conditions. Please note, the translations are provided as a courtesy, the official binding terms are in Spanish.",
     privacy: "Review our privacy policy. Please note, the translations are provided as a courtesy, the official binding policy is in Spanish.",
+    acceptableUse: "Review our acceptable use policy. Please note, the translations are provided as a courtesy, the official binding policy is in Spanish.",
     about: "Discover the story behind Todo Servis – who we are, our mission, and our passion for helping revolutionize the way individuals and businesses find and provide services. Learn about our team and the values that drive us. Join us on our journey!",
     impact: "Explore the meaningful impact of Todo Servis. Discover how we're making a difference and learn more about our projects, and contributions to positive change.",
     fullPost: "Read more about this service and contact the provider if interested. Explore additional images and the full description of the service.",
@@ -129,6 +134,8 @@ export const English = {
     posts: 'Provider Posts',
     profileInfo: 'Profile Information',
     yourPosts: 'Your Posts',
+    optional: '(optional)',
+    required: 'Required Fields',
   },
 
   postLabels: {
@@ -162,6 +169,8 @@ export const English = {
     changeEmail: 'If you update your email you must confirm the change at the old email address and the new email address to complete the change.',
     locationUpdate: 'If you update your location all fields must be completed.',
     postImages: 'The first image uploaded will be displayed on post previews. To upload additional images just click "Upload Image" again.',
+    firstNameEdit: 'This should be your legal name as it appears on your government ID. If you do not provide a display name your first and last name will be displayed instead. These values can be updated after creating a client or provider account. Since this is your legal name, the same first and last name must be used on your client and provider accounts.',
+    lastNameEdit: 'This should be your legal name as it appears on your government ID. If you do not provide a display name your first and last name will be displayed instead. These values can be updated after creating a client or provider account. Since this is your legal name, the same first and last name must be used on your client and provider accounts.',
   },
 
   apiErrors: {
@@ -187,6 +196,7 @@ export const English = {
     clientExists: "Client already exists",
     clientCreateProfileError: "Error creating client profile",
     clientEditProfileError: "Error updating client profile",
+    createUserError: "Error creating user, please try again or contact us for assistance.",
   },
 
   ariaLabels: {
@@ -295,5 +305,15 @@ productCategoryInfo:{
       // Add more products as needed
     ]
   },
+
+  clearFilters: {
+    filterButtons: [
+        { text: "Clear All Filters", ariaLabel: "Clear All Filters" },
+        { text: "Clear Categories", ariaLabel: "Clear Categories" },
+        { text: "Clear Major Municipality", ariaLabel: "Clear Major Municipality" },
+        { text: "Clear Minor Municipality", ariaLabel: "Clear Minor Municipality" },
+        { text: "Clear Governing District", ariaLabel: "Clear Governing District" },
+    ]
+  }
 
 } as const;

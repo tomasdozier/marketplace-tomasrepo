@@ -1,5 +1,6 @@
 export interface uiObject {
   textDirection: string,
+  siteDescription: string,
 
   pageTitles: {
     services: string,
@@ -20,9 +21,11 @@ export interface uiObject {
     resetPassword: string,
     terms: string,
     privacy: string,
+    acceptableUse: string,
     about: string,
     impact: string,
     fullPost: string,
+    offline: string,
   },
 
   pageDescriptions: {
@@ -42,6 +45,7 @@ export interface uiObject {
     resetPassword: string,
     terms: string,
     privacy: string,
+    acceptableUse: string,
     about: string,
     impact: string,
     fullPost: string,
@@ -130,6 +134,8 @@ export interface uiObject {
     posts: string,
     profileInfo: string,
     yourPosts: string,
+    optional: string,
+    required: string,
   },
 
   postLabels: {
@@ -163,6 +169,8 @@ export interface uiObject {
     changeEmail: string,
     locationUpdate: string,
     postImages: string,
+    firstNameEdit: string,
+    lastNameEdit: string,
   },
 
   apiErrors: {
@@ -188,6 +196,7 @@ export interface uiObject {
     clientExists: string,
     clientCreateProfileError: string,
     clientEditProfileError: string,
+    createUserError: string,
   },
 
   ariaLabels: {
@@ -293,4 +302,14 @@ productCategoryInfo:{
       // Add more products as needed
     ]
   },
+
+  clearFilters: {
+    filterButtons: [
+        { text: string, ariaLabel: string },
+        { text: string, ariaLabel: string },
+        { text: string, ariaLabel: string },
+        { text: string, ariaLabel: string },
+        { text: string, ariaLabel: string },
+    ]
+  }
 }

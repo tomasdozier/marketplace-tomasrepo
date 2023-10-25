@@ -1,5 +1,6 @@
 export const Spanish = {
   textDirection: 'ltr',
+  siteDescription: "Todo lo que necesitas para hacer el trabajo.",
 
   pageTitles: {
     services: 'Servicios',
@@ -20,9 +21,11 @@ export const Spanish = {
     resetPassword: 'Resetear la Contraseña',
     terms: 'Términos y Condiciones',
     privacy: "Política de Privacidad",
+    acceptableUse: "Política de uso aceptable",
     about: 'Sobre Nosotras',
     impact: 'Impacto',
     fullPost: "Ver publicación completa",
+    offline: 'Desconectada',
   },
 
   pageDescriptions: {
@@ -42,6 +45,7 @@ export const Spanish = {
     resetPassword: "Restablece tu contraseña de forma segura con Todo Servis. Siga el enlace de su correo electrónico para elegir una nueva contraseña.",
     terms: "Revisa nuestros términos y condiciones. Tenga en cuenta que las traducciones se proporcionan como cortesía; los términos oficiales vinculantes están en español.",
     privacy: "Revise nuestra política de privacidad. Tenga en cuenta que las traducciones se proporcionan como cortesía, la política oficial vinculante está en español.",
+    acceptableUse: "Revise nuestra política de uso aceptable. Tenga en cuenta que las traducciones se proporcionan como cortesía, la política oficial vinculante está en español.",
     about: "Descubra la historia detrás de Todo Servis: quiénes somos, nuestra misión y nuestra pasión por ayudar a revolucionar la forma en que las personas y las empresas encuentran y brindan servicios. Conozca nuestro equipo y los valores que nos impulsan. ¡Únase a nosotros en nuestro viaje!",
     impact: "Explore el impacto significativo de Todo Servis. Descubra cómo estamos marcando la diferencia y obtenga más información sobre nuestros proyectos y nuestras contribuciones al cambio positivo.",
     fullPost: "Lea más sobre este servicio y comuníquese con el proveedor si está interesado. Explora imágenes adicionales y la descripción completa del servicio.",
@@ -130,6 +134,8 @@ export const Spanish = {
     posts: 'Publicaciones del Proveedores',
     profileInfo: 'Información del Perfil',
     yourPosts: 'Tus Publicaciones',
+    optional: '(opcional)',
+    required: 'Campos Requeridos',
   },
 
   postLabels: {
@@ -162,6 +168,8 @@ export const Spanish = {
     changeEmail: 'Si actualiza su correo electrónico, debe confirmar el cambio en la dirección de correo electrónico anterior y en la nueva dirección de correo electrónico para completar el cambio.',
     locationUpdate: 'Si actualiza su ubicación, se deben completar todos los campos.',
     postImages: 'La primera imagen cargada se mostrará en las vistas previas de las publicaciones. Para cargar imágenes adicionales, simplemente haga clic en Cargar imagen nuevamente.',
+    firstNameEdit: 'Este debería ser su nombre legal tal como aparece en su identificación gubernamental. Si no proporciona un nombre para mostrar, se mostrarán su nombre y apellido. Estos valores se pueden actualizar después de crear una cuenta de cliente o proveedor. Dado que este es su nombre legal, se debe utilizar el mismo nombre y apellido en sus cuentas de cliente y proveedor.',
+    lastNameEdit: 'Este debería ser su nombre legal tal como aparece en su identificación gubernamental. Si no proporciona un nombre para mostrar, se mostrarán su nombre y apellido. Estos valores se pueden actualizar después de crear una cuenta de cliente o proveedor. Dado que este es su nombre legal, se debe utilizar el mismo nombre y apellido en sus cuentas de cliente y proveedor.',
   },
 
   apiErrors: {
@@ -187,6 +195,7 @@ export const Spanish = {
     clientExists: "El cliente ya existe",
     clientCreateProfileError: "Error al crear el perfil del cliente",
     clientEditProfileError: "Error al actualizar el perfil del cliente",
+    createUserError: "Error al crear usuario, inténtelo nuevamente o contáctenos para obtener ayuda.",
   },
 
   ariaLabels: {
@@ -294,6 +303,14 @@ export const Spanish = {
     ],
   },
 
-
+  clearFilters: {
+    filterButtons: [
+        { text: "Borra Todos los Filtros", ariaLabel: "Borra Todos los Filtros" },
+        { text: "Borra Categorías", ariaLabel: "Borra Categorías" },
+        { text: "Borra Municipio Importante", ariaLabel: "Borra Municipio Importante" },
+        { text: "Borra Munucipio Menor", ariaLabel: "Borra Munucipio Menor" },
+        { text: "Borra Distrito Gobernante", ariaLabel: "Borra Distrito Gobernante" },
+    ]
+  }
 
 } as const;
